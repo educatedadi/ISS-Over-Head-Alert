@@ -1,12 +1,13 @@
 from datetime import datetime
 import requests
 import smtplib
+import os
 
 MY_LAT = 24.047930  # My Latitude
 MY_LONG = 84.069099  # My Longitude
 
 my_email = "adisenpai101@gmail.com"
-password = "ar_@12345"
+password = os.environ.get("EMAIL_PASS")
 receiver_mail = "rockadityaraj21@gmail.com"
 
 
